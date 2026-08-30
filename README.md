@@ -144,7 +144,7 @@ Running any of the notebooks (`eda.ipynb`, `baseline1.ipynb`, `baseline2.ipynb`,
 
 ## Results Summary
 
-## Baseline 1 — Optimized DeBERTa-v3 + ResMLP (**Macro-F1: 0.6420**, 2,340 validation essays)
+# Baseline 1 — Optimized DeBERTa-v3 + ResMLP (**Macro-F1: 0.6420**, 2,340 validation essays)
 
 | Discourse Type | Precision | Recall | F1-Score |
 | :--- | :---: | :---: | :---: |
@@ -157,7 +157,7 @@ Running any of the notebooks (`eda.ipynb`, `baseline1.ipynb`, `baseline2.ipynb`,
 | **Rebuttal** | 0.448 | 0.485 | **0.466** |
 | **Overall Macro-F1** | — | — | **~0.6420** |
 
-## Baseline 1 Iterations & Progression
+# Baseline 1 Iterations & Progression
 
 | Iteration / Experiment | Architecture Highlights | Post-Processing Strategy | Macro-F1 (IoU $\ge$ 0.5) |
 | :--- | :--- | :--- | :---: |
