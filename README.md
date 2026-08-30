@@ -162,6 +162,18 @@ Running any of the notebooks (`eda.ipynb`, `baseline1.ipynb`, `baseline2.ipynb`,
 | **Baseline 1 (Lite / Truncate)** | DeBERTa-v3-base + Linear Head + Static Padding | Heuristic Class Thresholds + Min Length Rules | **0.6069** |
 | **Baseline 1 (Optimized + ResMLP)** | DeBERTa-v3-base + Last-4 Mean Pooling + BiLSTM + 5-MSD + Dynamic Padding + LLRD | 33 Deep Features + Smart Residual MLP Ranker + Sentence Snapping | **0.6420** *(+0.0351)* |
 
+**Baseline 3 — DeBERTa-v3-base (sliding window, local)** — Validation Macro-F1: **~0.46–0.47** (390 validation essays)
+
+| Discourse Type | F1-Score |
+|---|---|
+| Concluding Statement | 0.638 |
+| Lead | 0.633 |
+| Position | 0.551 |
+| Evidence | 0.511 |
+| Counterclaim | 0.310 |
+| Claim | 0.297 |
+| Rebuttal | 0.225 |
+
 **Baseline 4 — Longformer-base-4096** — Validation Macro-F1: **0.5793** (200 validation essays, IoU ≥ 0.5)
 
 | Discourse Type | Precision | Recall | F1-Score |
@@ -174,17 +186,6 @@ Running any of the notebooks (`eda.ipynb`, `baseline1.ipynb`, `baseline2.ipynb`,
 | Claim | 0.4772 | 0.5138 | 0.4948 |
 | Rebuttal | 0.3273 | 0.5000 | 0.3956 |
 
-**Baseline 3 — DeBERTa-v3-base (sliding window, local)** — Validation Macro-F1: **~0.46–0.47** (390 validation essays)
-
-| Discourse Type | F1-Score |
-|---|---|
-| Concluding Statement | 0.638 |
-| Lead | 0.633 |
-| Position | 0.551 |
-| Evidence | 0.511 |
-| Counterclaim | 0.310 |
-| Claim | 0.297 |
-| Rebuttal | 0.225 |
 
 ## Inference & Demo
 
