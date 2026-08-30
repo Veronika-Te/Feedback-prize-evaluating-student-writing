@@ -186,37 +186,6 @@ Running any of the notebooks (`eda.ipynb`, `baseline1.ipynb`, `baseline2.ipynb`,
 | Claim | 0.297 |
 | Rebuttal | 0.225 |
 
-_ADJUST: add baseline 2 (DeBERTa-v3-small, sliding window) results table here once evaluation is finished._
-
-## Recommended Next Steps
-
-- **Finish tuning baseline 1** (DeBERTa-v3-base, truncation) — currently the strongest baseline and the active focus of the project.
-- **Finish evaluating baseline 2** (DeBERTa-v3-small, sliding window) so all four baselines can be compared on equal footing.
-- Evaluate baseline 3 on its **full validation set** rather than the small sample, and confirm whether overfitting (training loss vs. validation F1 divergence after epoch 3) is the main cause of its gap vs. baseline 1.
-- Add **per-class loss weighting** targeting `Rebuttal`/`Counterclaim` specifically, since both remain the weakest class in every baseline regardless of backbone or context strategy.
-- Investigate why the sliding-window/long-context approaches (2, 3 & 4) haven't yet outperformed truncation-based baseline 1 — possibly the added chunking/windowing complexity introduces its own error sources that offset the context advantage.
-
-## Status
-
-This project is **still in progress** — treat all results above as intermediate, not final.
-
-- [x] Universal data pipeline (Colab + local support)
-- [x] Exploratory Data Analysis
-- [x] BIO subword alignment strategy
-- [x] DeBERTa-v3-base baseline (truncation) — initial result, tuning in progress
-- [ ] DeBERTa-v3-small baseline (sliding window) — training done, full evaluation pending
-- [x] DeBERTa-v3-base baseline (sliding window, local/MPS)
-- [x] Longformer-4096 baseline (full-length context)
-- [x] Mixed precision training (AMP)
-- [x] Official Macro-F1 evaluation
-- [x] Interactive HTML visualizer (ground truth vs. predicted spans)
-- [x] Standalone inference script (`predict.py`)
-- [x] Finish tuning baseline 1 for improved results
-- [ ] Finish evaluating baseline 2
-- [ ] Per-class loss weighting for Rebuttal / Counterclaim
-- [ ] Full validation set evaluation for baseline 3 (currently partial)
-- [ ] Investigate why sliding-window/long-context baselines underperform truncation baseline
-
 ## Inference & Demo
 
 ### 1. Interactive Web Demo (No Setup)
