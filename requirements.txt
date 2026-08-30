@@ -16,3 +16,4 @@ tqdm
 python-dotenv
 kagglehub
 PyYAML
+gradio
