@@ -50,7 +50,7 @@ An end-to-end token classification and span extraction pipeline:
 3. **Smart Residual Neural Span Ranker (ResMLP)**:
    A second-stage **Residual MLP Ranker** trained on top of DeBERTa's predictions:
    - **Candidate Generation**: Generates candidate spans using relaxed boundary thresholds.
-   - **35 Handcrafted Deep Features**:
+   - **33 Handcrafted Deep Features**:
      - *Span Probability Stats (7)*: Mean, std, max, min, median, start, and end probabilities.
      - *Confidence Margin & Entropy (2)*: Top-1 vs Top-2 class margin and full entropy.
      - *Context & Boundaries (6)*: Surrounding 3-word background probabilities and edge word confidences.
