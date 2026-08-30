@@ -2,8 +2,6 @@
 
 Token Classification / NER project for the [Feedback Prize - Evaluating Student Writing](https://www.kaggle.com/competitions/feedback-prize-2021) Kaggle competition.
 
-> **Status: work in progress.** Baselines 1–4 below are initial results, not final numbers. Baseline 1 in particular is still being tuned for better performance, and the comparison table will be updated as that work continues.
-
 ## Task
 
 Given argumentative essays written by students, build an NLP pipeline that segments the text and classifies each section into one of 7 discourse elements: **Lead, Position, Claim, Counterclaim, Rebuttal, Evidence, Concluding Statement**.
